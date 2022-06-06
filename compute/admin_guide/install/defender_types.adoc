@@ -99,6 +99,7 @@ Even if you have multiple containers in a task, it appears as a single entity in
 
 * Synchronizes policy with Console and sends alerts to Console.
 
+* By default global proxy settings are included in the Task Definition "Install Bundle," however, a second health check occurs approxiametly every four minutes as https traffic directly to the console. If necessary, a single firewall rule should be a sufficient control to ensure all network traffic passes through the proxy configured in the global settings. 
 
 [.section]
 ==== Dockerfile
